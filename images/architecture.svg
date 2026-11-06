@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="435" viewBox="0 0 900 435" role="img" aria-labelledby="title desc">
+<title id="title">Homelab logical architecture</title>
+<desc id="desc">Public traffic reaches Caddy through Cloudflare Tunnel. The operator uses Tailscale and SSH. Pi-hole serves LAN clients. Server2 is behind a dedicated router. Local restic backups exist and the NAS copy is incomplete.</desc>
+<defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0 0L6 3L0 6Z" fill="#526880"/></marker></defs>
+<rect width="900" height="435" rx="16" fill="#f5f8fc"/>
+<text x="28" y="38" font-family="system-ui,sans-serif" font-size="23" font-weight="700" fill="#183049">Homelab logical architecture</text>
+<g fill="none" stroke="#526880" stroke-width="2" marker-end="url(#arrow)">
+<path d="M166 93H210"/>
+<path d="M397 93H453"/>
+<path d="M634 93H698"/>
+<path d="M166 190H210"/>
+<path d="M397 190H453"/>
+<path d="M166 287H210"/>
+<path d="M634 287H698"/>
+<path d="M634 115H660V190H698"/>
+<path d="M785 215V354" stroke-dasharray="5 5"/>
+</g>
+<g font-family="system-ui,sans-serif" font-size="15" font-weight="600" text-anchor="middle" fill="#183049">
+<rect x="28" y="68" width="138" height="50" rx="8" fill="#e3edf9" stroke="#aec3db"/><text x="97" y="98">Web clients</text>
+<rect x="215" y="68" width="182" height="50" rx="8" fill="#e3edf9" stroke="#aec3db"/><text x="306" y="98">Cloudflare Tunnel</text>
+<rect x="458" y="68" width="176" height="50" rx="8" fill="#e3edf9" stroke="#aec3db"/><text x="546" y="98">Server1 · Caddy</text>
+<rect x="703" y="68" width="164" height="50" rx="8" fill="#e3edf9" stroke="#aec3db"/><text x="785" y="98">Hugo / Nextcloud</text>
+<rect x="28" y="165" width="138" height="50" rx="8" fill="#e3edf9" stroke="#aec3db"/><text x="97" y="195">Operator</text>
+<rect x="215" y="165" width="182" height="50" rx="8" fill="#e3edf9" stroke="#aec3db"/><text x="306" y="195">Tailscale + SSH</text>
+<rect x="458" y="165" width="176" height="50" rx="8" fill="#e3edf9" stroke="#aec3db"/><text x="546" y="195">Server1 admin</text>
+<rect x="703" y="165" width="164" height="50" rx="8" fill="#e3edf9" stroke="#aec3db"/><text x="785" y="195">Local restic disk</text>
+<rect x="28" y="262" width="138" height="50" rx="8" fill="#e3edf9" stroke="#aec3db"/><text x="97" y="292">LAN clients</text>
+<rect x="215" y="262" width="182" height="50" rx="8" fill="#e3edf9" stroke="#aec3db"/><text x="306" y="292">Pi-hole · DNS / DHCP</text>
+<rect x="458" y="262" width="176" height="50" rx="8" fill="#e3edf9" stroke="#aec3db"/><text x="546" y="292">Dedicated lab router</text>
+<rect x="703" y="262" width="164" height="50" rx="8" fill="#e3edf9" stroke="#aec3db"/><text x="785" y="292">Server2 · Lab</text>
+<rect x="703" y="359" width="164" height="50" rx="8" fill="#fff2da" stroke="#aec3db"/><text x="785" y="389">NAS · Incomplete</text>
+</g>
+</svg>
